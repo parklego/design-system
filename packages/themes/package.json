@@ -1,0 +1,10 @@
+{
+  "name": "@parklego/theme",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "esbuild --minify src/index.js --bundle --outfile=dist/out.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.16.17"
+  }
+}
