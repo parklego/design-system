@@ -1,1 +1,1 @@
-export * as vars from "./variables";
+export * as variables from "./variables";
