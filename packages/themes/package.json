@@ -11,7 +11,7 @@
     }
   },
   "scripts": {
-    "build": "npm run clean && npm run build:js && npm run build:ts",
+    "build": "npm run clean && npm run build:ts && npm run build:js",
     "build:js": "node build.js",
     "build:ts": "tsc --emitDeclarationOnly",
     "build:css": "node ./script/build-css-module.js",
