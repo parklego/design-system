@@ -1,5 +1,5 @@
 {
-  "name": "@parklego/theme",
+  "name": "@parklego/themes",
   "version": "0.0.1",
   "type": "module",
   "main": "dist/index.js",
@@ -8,7 +8,8 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    }
+    },
+    "./theme.css": "./dist/theme.css"
   },
   "scripts": {
     "build": "npm run clean && npm run build:ts && npm run build:js && npm run build:css",
