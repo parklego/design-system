@@ -3,3 +3,11 @@
 
 **/dist/*
 dist
+
+.yarn/*
+yarn.lock
+.nx/*
+
+.pnp*
+
+.vscode

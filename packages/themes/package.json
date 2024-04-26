@@ -12,14 +12,14 @@
     "./theme.css": "./dist/theme.css"
   },
   "scripts": {
-    "build": "npm run clean && npm run build:ts && npm run build:js && npm run build:css",
+    "build": "yarn clean && yarn build:ts && yarn build:js && yarn build:css",
     "build:js": "node build.js",
-    "build:ts": "tsc --emitDeclarationOnly",
+    "build:ts": "yarn tsc --emitDeclarationOnly",
     "build:css": "node ./script/build-css-module.js",
     "clean": "rm -rf dist"
   },
   "devDependencies": {
-    "esbuild": "^0.16.17",
+    "@parklego/esbuild-config": "workspace:^",
     "typescript": "^5.4.5"
   }
 }

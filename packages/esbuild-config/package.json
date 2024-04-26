@@ -1,0 +1,14 @@
+{
+  "name": "@parklego/esbuild-config",
+  "packageManager": "yarn@4.1.1",
+  "main": "index.js",
+  "file": [
+    "index.js"
+  ],
+  "scripts": {
+    "build": "echo \"kkkk!! \""
+  },
+  "dependencies": {
+    "esbuild": "0.16.17"
+  }
+}
