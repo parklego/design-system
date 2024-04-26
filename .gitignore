@@ -5,9 +5,13 @@
 dist
 
 .yarn/*
-yarn.lock
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
 .nx/*
 
-.pnp*
-
 .vscode
+
