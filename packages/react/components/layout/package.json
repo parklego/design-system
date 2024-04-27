@@ -1,0 +1,35 @@
+{
+  "name": "@parklego/react-components-layout",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./style.css": "./dist/index.css"
+  },
+  "scripts": {
+    "build": "yarn clean && yarn build:ts && yarn build:js",
+    "build:js": "node build.js",
+    "build:ts": "yarn tsc --emitDeclarationOnly",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@parklego/esbuild-config": "workspace:^",
+    "@parklego/themes": "workspace:^",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "@vanilla-extract/css": "^1.14.2",
+    "@vanilla-extract/esbuild-plugin": "^2.3.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "@parklego/themes": "workspace:^",
+    "react": "*"
+  }
+}
