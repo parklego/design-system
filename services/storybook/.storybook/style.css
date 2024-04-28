@@ -1,0 +1,7 @@
+.docs-story {
+  background: var(--gray-50);
+}
+
+#storybook-root {
+  background: var(--gray-50);
+}

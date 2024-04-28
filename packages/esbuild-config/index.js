@@ -1,6 +1,8 @@
 const { build } = require('esbuild')
 
 const run = ({ entryPoints = ['src/index.ts'], pkg, config = {} }) => {
+  const watch = process.argv.includes('--watch')
+
   // 라이브러리를 번들에 포함하지 않고 외부에 유지함으로써 번들 크기를 최적화
   const external = Object.keys({
     ...pkg.devDependencies,
@@ -14,6 +16,7 @@ const run = ({ entryPoints = ['src/index.ts'], pkg, config = {} }) => {
     sourcemap: true,
     outdir: 'dist',
     target: 'es2019',
+    watch,
     external,
     ...config,
   }

@@ -12,10 +12,11 @@
     "./style.css": "./dist/index.css"
   },
   "scripts": {
-    "build": "yarn clean && yarn build:ts && yarn build:js",
+    "build": "yarn clean && yarn build:js && yarn build:type",
     "build:js": "node build.js",
-    "build:ts": "yarn tsc --emitDeclarationOnly",
-    "clean": "rm -rf dist"
+    "build:type": "yarn tsc --emitDeclarationOnly",
+    "clean": "rm -rf dist",
+    "dev": "yarn build:js --watch && yarn build:type --watch"
   },
   "devDependencies": {
     "@parklego/esbuild-config": "workspace:^",
